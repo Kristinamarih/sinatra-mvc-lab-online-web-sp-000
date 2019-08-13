@@ -18,7 +18,7 @@ class PigLatinizer
     words.collect {|w| piglatinize(w)}.join(" ")
   end
   
-  def consonant?(word)
+  def consonant?(char)
     !char.match(/[aeiouAEIOU]/)
   end
   
